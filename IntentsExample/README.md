@@ -1,16 +1,16 @@
 * call intent
 
-val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "1122334455"))
+val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "callphone number"))
 
 * sms intent
 
-val intent = Intent(Intent.ACTION_VIEW, Uri.parse("sms:" + "1122334455"))
+val intent = Intent(Intent.ACTION_VIEW, Uri.parse("sms:" + "message phone number"))
 
 * url intent
 
 val openURL = Intent(Intent.ACTION_VIEW)
 
-openURL.data = Uri.parse("https://www.google.com/")
+openURL.data = Uri.parse("go to website")
 
 * new activity intent
 
@@ -20,6 +20,6 @@ startActivity(Intent(this,AnotherActivity::class.java))
 
 val intent = Intent(this,AnotherActivity::class.java)
 
-intent.putExtra("text",editText.text.toString())
+intent.putExtra("value",editText.text.toString())
 
 startActivity(intent)
