@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:padding="50dp">
+
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/btnCall"
+        style="@android:style/Holo.ButtonBar"
+        android:text="Call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="onClick"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnSms"
+        style="@android:style/Holo.ButtonBar"
+        android:text="Sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="onClick"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnEmail"
+        style="@android:style/Holo.ButtonBar"
+        android:text="E-mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="onClick"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnUrl"
+        style="@android:style/Holo.ButtonBar"
+        android:text="Google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="onClick"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnNewActivity"
+        style="@android:style/Holo.ButtonBar"
+        android:text="New Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            style="@android:style/Holo.ButtonBar"
+            android:layout_width="wrap_content"
+            android:text="PASS DATA TO ACTIVITY "
+            android:layout_height="wrap_content">
+        </TextView>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editText"
+            android:layout_weight="1"
+            android:layout_marginRight="50dp"
+            android:hint="Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </EditText>
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/btnPassActivity"
+            android:layout_weight="1"
+            style="@android:style/Holo.ButtonBar"
+            android:layout_width="wrap_content"
+            android:text="Pass Activity"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
