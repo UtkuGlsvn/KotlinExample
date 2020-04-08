@@ -23,3 +23,6 @@ val intent = Intent(this,AnotherActivity::class.java)
 intent.putExtra("value",editText.text.toString())
 
 startActivity(intent)
+
+
+[turkish blog post-blog yazısı için](https://medium.com/@utkuglsvn/kotlin-ile-intent-i%C5%9Flemleri-1317d2f83402)
